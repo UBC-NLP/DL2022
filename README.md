@@ -86,6 +86,11 @@ Will be formatted as below...
 * [[A Lexicon-Based Supervised Attention Model for Neural Sentiment Analysis](http://www.aclweb.org/anthology/C18-1074)]
 * [[Weakly Supervised One-Shot Detection with Attention Siamese Networks](https://arxiv.org/pdf/1801.03329.pdf)]
 * [[Graph-Attention Networks](https://mila.quebec/wp-content/uploads/2018/07/d1ac95b60310f43bb5a0b8024522fbe08fb2a482.pdf)]
+* [[Abusive Language Detection with Graph Convolutional Networks](https://arxiv.org/pdf/1904.04073.pdf)]
+* [[Modeling Ideological Agenda Setting and Framing in Polarized Online Groups with Graph Neural Networks and Structured Sparsity](https://arxiv.org/pdf/2104.08829.pdf)]
+* [[You Shall Know a User by the Company It Keeps: Dynamic Representations for Social Media Users in NLP](https://arxiv.org/pdf/1909.00412.pdf)]
+* [[Words are the Window to the Soul: Language-based User Representations for Fake News Detection](https://arxiv.org/pdf/2011.07389.pdf)]
+* [[Overcoming Language Variation in Sentiment Analysis with Social Attention](https://aclanthology.org/Q17-1021.pdf)]
 
 * [[]()]
 * [[]()]
