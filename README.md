@@ -92,8 +92,6 @@ Will be formatted as below...
 * [[Overcoming Language Variation in Sentiment Analysis with Social Attention](https://aclanthology.org/Q17-1021.pdf)]
 * [[GPT-GNN: Generative Pre-Training of Graph Neural Networks](https://arxiv.org/abs/2006.15437)]
 * [[Graph Contrastive Learning with Augmentations](https://arxiv.org/abs/2010.13902)]
-* [[GPT-GNN: Generative Pre-Training of Graph Neural Networks](https://arxiv.org/abs/2006.15437)]
-* [[Graph Contrastive Learning with Augmentations](https://arxiv.org/abs/2010.13902)]
 * [[Hierarchical Heterogeneous Graph Representation Learning for Short Text Classification](https://arxiv.org/pdf/2111.00180.pdf)]
 * [[Iterative Deep Graph Learning for Graph Neural Networks: Better and Robust Node Embeddings](https://arxiv.org/abs/2006.13009)]
 
