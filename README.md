@@ -126,14 +126,15 @@ Will be formatted as below...
 
 Format similar to the above
 
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
+* [[SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821)]
+* [[Fast, Effective, and Self-Supervised: Transforming Masked Language Models into Universal Lexical and Sentence Encoders](https://arxiv.org/abs/2104.08027)]
+* [[Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models](https://arxiv.org/abs/2108.08877)]
+* [[Contrastive Learning for Many-to-many Multilingual Neural Machine Translation](https://arxiv.org/abs/2105.09501)]
+* [[Contrastive Learning with Adversarial Perturbations for Conditional Text Generation](https://arxiv.org/abs/2012.07280)]
+* [[Contrastive Learning for Context-aware Neural Machine Translation Using Coreference Information](https://arxiv.org/abs/2109.05712)]
+* [[COCO-LM: Correcting and Contrasting Text Sequences for Language Model Pretraining](https://arxiv.org/abs/2102.08473)]
+* [[Improving Gradient-based Adversarial Training for Text Classification by Contrastive Learning and Auto-Encoder](https://arxiv.org/abs/2109.06536)]
+* [[Improved Text Classification via Contrastive Adversarial Training](https://arxiv.org/abs/2107.10137)]
 * [[]()]
 * [[]()]
 * [[]()]
