@@ -154,7 +154,7 @@ Format similar to the above
 ### Efficient Deep Learning Models
 
 * [[Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732)]
-* [[PoWER-BERT: Accelerating BERT Inference via Progressive Word-vector Elimination](https://arxiv.org/abs/2001.08950
+* [[PoWER-BERT: Accelerating BERT Inference via Progressive Word-vector Elimination](https://arxiv.org/abs/2001.08950)]
 * [[Length-Adaptive Transformer: Train Once with Length Drop, Use Anytime with Search](https://arxiv.org/abs/2010.07003)]
 * [[Sparse is Enough in Scaling Transformers](https://arxiv.org/abs/2111.12763)]
 * [[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)]
