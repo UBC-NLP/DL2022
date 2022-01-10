@@ -1,5 +1,4 @@
-# DL2022
-Trends in Deep Learning Seminar at UBC
+# Trends in Deep Learning Seminar at UBC 
 
 ### The University of British Columbia
 
@@ -27,10 +26,11 @@ Trends in Deep Learning Seminar at UBC
 **Rationale/Background:** *Deep learning*, a class of machine learning methods inspired by information processing in the human brain, has revolutionized the way we build machines, automate processes, analyze data, and just problem-solve in a fast-increasing host of domains. These transformational changes have disrupted whole industries, and are expected to impact wide sectors of society. Scholarship in the field has been growing very rapidly, with significant funding provided for both basic research and applications. 
 
 
-**Goal:** This is a graduate-level, directed resarch course aimed at bridging the gap between intermediate deep learning knowledge and novel and bleeding-edge deep learning research. The course will emphasize deep learning methods developed over the past 1-2 years, with more attention allocated to the last 8-12 months of scholarship in the field. Areas will include (some of) the below:
+**Goal:** This is a graduate-level, directed resarch course aimed at bridging the gap between intermediate deep learning knowledge and novel and bleeding-edge deep learning research. The course will emphasize deep learning methods developed over the past 1-2 years. Areas will include the below:
 
 * Graph Representation Learning
 * Contrastive Learning
+* Unsupervised Deep Learning for Speech
 
 
 **Potential audiences for this course are:**
@@ -72,9 +72,11 @@ Format the below with new content
 
 | Time | Topic/Paper | Presenter | Slides |
 | ----  | ------ | ------- | ------ |
-| Jan. 9 | [[Generative Adversarial Nets](https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf)] | Pramit Saha | [[slides](https://github.com/UBC-NLP/dlr/blob/master/slides/20190109_GAN.pdf)] |
-| Jan. 16 | [[Recipe1M: A Dataset for Learning Cross-Modal Embeddings for Cooking Recipes and Food Images](https://arxiv.org/pdf/1810.06553.pdf)] | Borna Ghotbi | [[slides](https://github.com/UBC-NLP/dlr/blob/master/slides/20190117_recipe1m.pdf)] |
-| Jan. 18 | [[Bert: Pre-training of deep bidirectional transformers for language understanding](https://arxiv.org/pdf/1810.04805.pdf)] | Arun Rajendran | [[slides](https://github.com/UBC-NLP/dlr/blob/master/slides/20190118_BERT.pdf)] |
+| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
 
 ## 8. Readings (tentative):  
 
@@ -95,31 +97,6 @@ Will be formatted as below...
 * [[Hierarchical Heterogeneous Graph Representation Learning for Short Text Classification](https://arxiv.org/pdf/2111.00180.pdf)]
 * [[Iterative Deep Graph Learning for Graph Neural Networks: Better and Robust Node Embeddings](https://arxiv.org/abs/2006.13009)]
 
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-
 ---
 
 ### Contrastive Learning
@@ -135,21 +112,6 @@ Format similar to the above
 * [[COCO-LM: Correcting and Contrasting Text Sequences for Language Model Pretraining](https://arxiv.org/abs/2102.08473)]
 * [[Improving Gradient-based Adversarial Training for Text Classification by Contrastive Learning and Auto-Encoder](https://arxiv.org/abs/2109.06536)]
 * [[Improved Text Classification via Contrastive Adversarial Training](https://arxiv.org/abs/2107.10137)]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
-* [[]()]
 
 ### Efficient Deep Learning Models
 
