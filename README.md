@@ -79,11 +79,11 @@ Format the below with new content
 | TBA | [[TBA](xx.pdf)] | TBA | [[slides](xx.pdf)] |
 | TBA | [[TBA](xx.pdf)] | TBA | [[slides](xx.pdf)] |
 
+--- 
+
 ## 8. Readings (tentative):  
 
 ### Graph Representation Learning
-
-Will be formatted as below...
 
 * [[Neural Sentiment Classification with User and Product Attention](http://www.aclweb.org/anthology/D16-1171)]
 * [[A Lexicon-Based Supervised Attention Model for Neural Sentiment Analysis](http://www.aclweb.org/anthology/C18-1074)]
@@ -102,8 +102,6 @@ Will be formatted as below...
 
 ### Contrastive Learning
 
-Format similar to the above
-
 * [[SimCSE: Simple Contrastive Learning of Sentence Embeddings](https://arxiv.org/abs/2104.08821)]
 * [[Fast, Effective, and Self-Supervised: Transforming Masked Language Models into Universal Lexical and Sentence Encoders](https://arxiv.org/abs/2104.08027)]
 * [[Sentence-T5: Scalable Sentence Encoders from Pre-trained Text-to-Text Models](https://arxiv.org/abs/2108.08877)]
@@ -114,6 +112,8 @@ Format similar to the above
 * [[Improving Gradient-based Adversarial Training for Text Classification by Contrastive Learning and Auto-Encoder](https://arxiv.org/abs/2109.06536)]
 * [[Improved Text Classification via Contrastive Adversarial Training](https://arxiv.org/abs/2107.10137)]
 
+---
+
 ### Efficient Deep Learning Models
 
 * [[Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732)]
@@ -123,6 +123,8 @@ Format similar to the above
 * [[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)]
 * [[Scaling Laws for Neural Machine Translation](https://arxiv.org/abs/2109.07740)]
 * [[Data and Parameter Scaling Laws for Neural Machine Translation](https://aclanthology.org/2021.emnlp-main.478/)]
+
+--- 
 
 ## 9. Course Assignments/Grades:
 | Assignment | Due date | Weight |
@@ -162,6 +164,7 @@ The major assignment in this course is a research paper that presents a novel de
 
 An 8-page, publishable, research paper + all relevant code. 
 
+---
 
 ## 10. Course Policies
 
