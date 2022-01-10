@@ -114,6 +114,10 @@ Format the below with new content
 
 ---
 
+### Normalizing Flows
+
+---
+
 ### Efficient Deep Learning Models
 
 * [[Efficient Transformers: A Survey](https://arxiv.org/abs/2009.06732)]
