@@ -72,11 +72,12 @@ Format the below with new content
 
 | Time | Topic/Paper | Presenter | Slides |
 | ----  | ------ | ------- | ------ |
-| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
-| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
-| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
-| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
-| TBA | [[TBA](xx.pdf)] | Pramit Saha | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | TBA | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | TBA | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | TBA | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | TBA | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | TBA | [[slides](xx.pdf)] |
+| TBA | [[TBA](xx.pdf)] | TBA | [[slides](xx.pdf)] |
 
 ## 8. Readings (tentative):  
 
