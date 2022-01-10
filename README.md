@@ -132,7 +132,7 @@ Format the below with new content
 | Professionalization & Class Participation |  Throughout | 10% |
 | First presentation |  | 10% |
 | Second presentation |  | 10% |
-| Third presentation (optional; grade can be allocated to final project) |  | 10% |
+| Third presentation |  | 10% |
 | Individual or Group assignment: Project Proposal |   | Ungraded |
 | Individual or Group assignment: Term Project |     | 60% |
 
