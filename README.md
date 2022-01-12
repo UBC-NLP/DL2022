@@ -97,7 +97,7 @@ Format the below with new content
 * [[Graph Contrastive Learning with Augmentations](https://arxiv.org/abs/2010.13902)]
 * [[Hierarchical Heterogeneous Graph Representation Learning for Short Text Classification](https://arxiv.org/pdf/2111.00180.pdf)]
 * [[Iterative Deep Graph Learning for Graph Neural Networks: Better and Robust Node Embeddings](https://arxiv.org/abs/2006.13009)]
-
+* [[A Graph Auto-encoder Model of Derivational Morphology](https://aclanthology.org/2020.acl-main.106.pdf)]
 ---
 
 ### Contrastive Learning
