@@ -85,6 +85,9 @@ Format the below with new content
 
 ### Graph Representation Learning
 
+* Book: Graph Representation Learning [[pdf](https://www.cs.mcgill.ca/~wlh/grl_book/)]
+* List of Papers on Graph for NLP [[Link](https://github.com/UBC-NLP/dl-for-graphs)]
+
 * [[Neural Sentiment Classification with User and Product Attention](http://www.aclweb.org/anthology/D16-1171)]
 * [[A Lexicon-Based Supervised Attention Model for Neural Sentiment Analysis](http://www.aclweb.org/anthology/C18-1074)]
 * [[Weakly Supervised One-Shot Detection with Attention Siamese Networks](https://arxiv.org/pdf/1801.03329.pdf)]
