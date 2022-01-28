@@ -4,17 +4,17 @@
 
 **Year:** Winter Session II 2022
 
-**Time:** xx
+**Time:** Monday and Wednesday 1:00-2:30
 
-**Location:** xx
+**Location:** Zoom
 
 **Instructor:** Dr. Muhammad Abdul-Mageed
 
-**Office location:** xx
+**Office location:** Ling 242
 
 **Office phone:** 6048-274-530
 
-**Office hours:** xx
+**Office hours:** By appointment
 
 **E-mail address:** muhammad.mageed@ubc.ca
 
