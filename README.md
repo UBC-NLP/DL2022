@@ -156,6 +156,15 @@ Format the below with new content
 * [[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)]
 * [[Scaling Laws for Neural Machine Translation](https://arxiv.org/abs/2109.07740)]
 * [[Data and Parameter Scaling Laws for Neural Machine Translation](https://aclanthology.org/2021.emnlp-main.478/)]
+* [A Survey on Dynamic Neural Networks for Natural Language Processing](https://arxiv.org/abs/2202.07101)
+* [Neural Architecture Search: A Survey](https://arxiv.org/abs/1808.05377)
+* [Primer: Searching for Efficient Transformers for Language Modeling](https://arxiv.org/abs/2109.08668)
+* [Searching for Convolutions and a More Ambitious NAS](https://openreview.net/forum?id=ascdLuNQY4J)
+* [Unified Scaling Laws for Routed Language Models](https://arxiv.org/abs/2202.01169)
+* [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/pdf/2101.03961.pdf)
+* [Mixture-of-Experts with Expert Choice Routing](https://arxiv.org/abs/2202.09368)
+* [AutoDistil : Few-shot Task-agnostic Neural Architecture Search for Distilling Large Language Models](https://arxiv.org/pdf/2201.12507.pdf)
+* [The Efficiency Misnomer](https://openreview.net/forum?id=iulEMLYh1uR)
 
 --- 
 
@@ -172,6 +181,9 @@ Format the below with new content
 * [What Do You Get When You Cross Beam Search with Nucleus Sampling?](https://arxiv.org/pdf/2107.09729.pdf)
 * [A Diversity-Promoting Objective Function for Neural Conversation Models](https://arxiv.org/abs/1510.03055)
 * [A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417)
+* [Noisy Parallel Approximate Decoding for Conditional Recurrent Language Model](https://arxiv.org/abs/1605.03835)
+* [A Simple, Fast Diverse Decoding Algorithm for Neural Generation](https://arxiv.org/abs/1611.08562)
+* [Diverse Beam Search: Decoding Diverse Solutions from Neural Sequence Models](https://arxiv.org/abs/1610.02424)
 
 ## 9. Course Assignments/Grades:
 | Assignment | Due date | Weight |
