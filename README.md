@@ -159,6 +159,20 @@ Format the below with new content
 
 --- 
 
+### Diversity in Language Generation
+* [Presentation slides](https://docs.google.com/presentation/d/1fCMZbmaFx5Yi970U_jLvLyK-jsf79bdvjqnlYistNnE/edit?usp=sharing)
+* [Notes](https://docs.google.com/document/d/1ClS6XKBX53CxL-mJ_wkh5aNS-7wOsQJPeGOnvShpvas/edit?usp=sharing)
+* [The Curious Case of Neural Text Degeneration](https://arxiv.org/abs/1904.09751)
+* [Comparison of Diverse Decoding Methods from Conditional Language Models](https://arxiv.org/pdf/1906.06362.pdf)
+* [Trading Off Diversity and Quality in Natural Language Generation](https://arxiv.org/pdf/2004.10450.pdf)
+* [Mirostat: A Neural Text Decoding Algorithm that Directly Controls Perplexity](https://arxiv.org/abs/2007.14966)
+* [COD3S: Diverse Generation with Discrete Semantic Signatures](https://arxiv.org/pdf/2010.02882.pdf)
+* [A Systematic Characterization of Sampling Algorithms for Open-ended Language Generation](https://aclanthology.org/2020.aacl-main.36.pdf)
+* [How Decoding Strategies Affect the Verifiability of Generated Text](https://arxiv.org/pdf/1911.03587.pdf)
+* [What Do You Get When You Cross Beam Search with Nucleus Sampling?](https://arxiv.org/pdf/2107.09729.pdf)
+* [A Diversity-Promoting Objective Function for Neural Conversation Models](https://arxiv.org/abs/1510.03055)
+* [A Contrastive Framework for Neural Text Generation](https://arxiv.org/abs/2202.06417)
+
 ## 9. Course Assignments/Grades:
 | Assignment | Due date | Weight |
 | ---------- | -------- | ------ |
