@@ -1,9 +1,11 @@
-#Run Language Model Pretraining
+# Run Language Model Pretraining
+
 This code was tested on:
 * python/3.6.8
 * troch==1.8.0
 * transformers==4.6.0
 
+## Instruction
 * Training data: training_sample.txt. Each sample is in a line. Samples are split by a empty line.
 * Job shell script: run.sh
 * Input arguments: Line 494-663
