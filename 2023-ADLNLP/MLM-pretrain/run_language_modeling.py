@@ -72,22 +72,7 @@ class TextDataset(Dataset):
 
         block_size = block_size - (tokenizer.max_len - tokenizer.max_len_single_sentence)
 
-        # directory, filename = os.path.split(file_path)
-        # cached_features_file = os.path.join(
-        #     directory, args.model_type + "_cached_lm_" + str(block_size) + "_" + filename
-        # )
-
-        # if os.path.exists(cached_features_file) and not args.overwrite_cache:
-        #     logger.info("Loading features from cached file %s", cached_features_file)
-        #     with open(cached_features_file, "rb") as handle:
-        #         self.examples = pickle.load(handle)
-        # else:
-        # logger.info("Creating features from dataset file at %s", directory)
-
         self.examples = []
-        # with open(file_path, encoding="utf-8") as f:
-        #     text = f.read()
-
         text_file = open(file_path, "r")
         all_text = text_file.read()
         text_file.close()
@@ -99,12 +84,8 @@ class TextDataset(Dataset):
             for i in range(0, len(doc) - block_size + 1, block_size):  # Truncate in block of block_size
                 self.examples.append(tokenizer.build_inputs_with_special_tokens(doc[i : i + block_size]))
         # Note that we are loosing the last truncated example here for the sake of simplicity (no padding)
-        # If your dataset is small, first you should loook for a bigger one :-) and second you
+        # If your dataset is small, first you should look for a bigger one :-) and second you
         # can change this behavior by adding (model specific) padding.
-
-        # logger.info("Saving features into cached file %s", cached_features_file)
-        # with open(cached_features_file, "wb") as handle:
-        #     pickle.dump(self.examples, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     def __len__(self):
         return len(self.examples)
@@ -138,10 +119,9 @@ def make_collate(tokenizer, block_size, lazy=False):
         :param examples: (list[str]) the text lines to be collated in this batch.
         :return: (torch.tensor) of the tokenized examples padded/truncated to form a 2d tensor of ints.
         """
-#         examples_tokens = [tokenizer.tokenize(ex) for ex in examples if ex] 
         # We need to filter empty strings in examples.
         # LazyLineByLineTextDataset will return empty string if there is an error when reading a line in the data file.
-        # print("Covert to ids.")
+        
         examples = tokenizer.batch_encode_plus(
             [ex for ex in examples if ex],
             max_length=block_size,
@@ -419,39 +399,6 @@ def train(args, train_dataset, model: PreTrainedModel, tokenizer: PreTrainedToke
                 model.zero_grad()
             
                 global_step += 1
-
-            # if (args.local_rank == -1 or torch.distributed.get_rank() == 0) and args.logging_steps > 0 and global_step % args.logging_steps == 0:
-            #     # Log metrics
-            #     if (
-            #         args.local_rank == -1 and args.evaluate_during_training
-            #     ):  # Only evaluate when single GPU otherwise metrics may not average well
-            #         results = evaluate(args, model, tokenizer)
-            #         for key, value in results.items():
-            #             tb_writer.add_scalar("eval_{}".format(key), value, global_step)
-            #     tb_writer.add_scalar("lr", scheduler.get_lr()[0], global_step)
-            #     tb_writer.add_scalar("loss", (tr_loss - logging_loss) / args.logging_steps, global_step)
-            #     logging_loss = tr_loss
-
-            # if (args.local_rank == -1 or torch.distributed.get_rank() == 0) and args.save_steps > 0 and global_step % args.save_steps == 0:
-            #     checkpoint_prefix = "checkpoint"
-            #     # Save model checkpoint
-            #     output_dir = os.path.join(args.output_dir, "{}-{}".format(checkpoint_prefix, global_step))
-            #     os.makedirs(output_dir, exist_ok=True)
-            #     model_to_save = (
-            #         model.module if hasattr(model, "module") else model
-            #     )  # Take care of distributed/parallel training
-            #     model_to_save.save_pretrained(output_dir)
-            #     tokenizer.save_pretrained(output_dir)
-
-            #     torch.save(args, os.path.join(output_dir, "training_args.bin"))
-            #     logger.info("Saving model checkpoint to %s", output_dir)
-
-            #     _rotate_checkpoints(args, checkpoint_prefix)
-
-            #     torch.save(optimizer.state_dict(), os.path.join(output_dir, "optimizer.pt"))
-            #     torch.save(scheduler.state_dict(), os.path.join(output_dir, "scheduler.pt"))
-            #     logger.info("Saving optimizer and scheduler states to %s", output_dir)
-
             
             if args.max_steps > 0 and global_step > args.max_steps:
                 epoch_iterator.close()
@@ -804,8 +751,6 @@ def main():
             "You are instantiating a new config instance from scratch. This is not supported, but you can do it from another script, save it,"
             "and load it from here, using --config_name"
         )
-
-    global tokenizer
     
     if args.tokenizer_name:
         tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_name, cache_dir=args.cache_dir)
