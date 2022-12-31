@@ -30,21 +30,21 @@
    (6) Jacob Eisenstein. Introduction to Natural Language Processing. 2019, MIT Press, ISBN 9780262042840.
 
 ## 3. Course syllabus
-| Teaching Week | Topic | Slides |
-| ----  | ------ | ------- | 
-| 1 | Course Overview & Refresher on Classical Deep Learning Architectures  | [[slides](xx.pdf)] |
-| 2 | Transformer Variations  | [[slides](xx.pdf)] |
-| 3 | Foundation Models: Encoder-Only Models  | [[slides](xx.pdf)] |
-| 4 | Foundation Models: Decoder-Only Models  | [[slides](xx.pdf)] |
-| 5 | Foundation Models: Encoder-Decoder Models  | [[slides](xx.pdf)] |
-| 6 | Large-Scale Foundation Models  | [[slides](xx.pdf)] |
-| 7 | Contrastive Learning  | [[slides](xx.pdf)] |
-| 8 | Language Model Prompting  | [[slides](xx.pdf)] |
-| 9 | Machine Translation: Seq2Seq Models  | [[slides](xx.pdf)] |
-| 10 | Machine Translation: Decoding and Sampling Methods  | [[slides](xx.pdf)] |
-| 11 | Machine Translation: Word Mapping and Evaluation  | [[slides](xx.pdf)] |
-| 12 | Multilinguality and Low-Resource NLP   | [[slides](xx.pdf)] |
-| 13 | Fairness in NLP, and NLP in Social Media  | [[slides](xx.pdf)] |
-| 14 | Speech—Language Interface  | [[slides](xx.pdf)] |
-| 15 | Vision—Language Interface  | [[slides](xx.pdf)] |
+| Teaching Week | Topic | Leture | Lab | Slides |
+| ----  | ------ | ------- | ------- | ------- |
+| 1 | Course Overview & Refresher on Classical Deep Learning Architectures  | Overview of research directions in key core NLP areas; Refresher on classical neural architectures (e.g., CNNs, RNNs, LSTMs, and GRUs) with example applications | NumPy; PyTorch; Practice text classification with attention-based RNNs | [[slides](xx.pdf)] |
+| 2 | Transformer Variations  | Refresher on the Transformer; Long-document Transformers; Wide Transformers; Understanding the role of attention in the Transformer | Transformer architecture; Longformer | [[slides](xx.pdf)] |
+| 3 | Foundation Models: Encoder-Only Models  | Self-supervised learning; Encoder-only models (e.g., BERT, RoBERTA, SpanBERT, mBERT); Denoising objectives and contrastive objectives in encoder-only models; Anisotropy in the embeddings of the encoder; Evaluating encoder-only models | Encoder-only models; Inspecting the model embeddings for anisotropy | [[slides](xx.pdf)] |
+| 4 | Foundation Models: Decoder-Only Models  | | |[[slides](xx.pdf)] |
+| 5 | Foundation Models: Encoder-Decoder Models  | | | [[slides](xx.pdf)] |
+| 6 | Large-Scale Foundation Models  | | | [[slides](xx.pdf)] |
+| 7 | Contrastive Learning  | | | [[slides](xx.pdf)] |
+| 8 | Language Model Prompting  | | | [[slides](xx.pdf)] |
+| 9 | Machine Translation: Seq2Seq Models  | | | [[slides](xx.pdf)] |
+| 10 | Machine Translation: Decoding and Sampling Methods  | | | [[slides](xx.pdf)] |
+| 11 | Machine Translation: Word Mapping and Evaluation  | | | [[slides](xx.pdf)] |
+| 12 | Multilinguality and Low-Resource NLP   | | |[[slides](xx.pdf)] |
+| 13 | Fairness in NLP, and NLP in Social Media  |  | | [[slides](xx.pdf)] |
+| 14 | Speech—Language Interface  | | | [[slides](xx.pdf)] |
+| 15 | Vision—Language Interface  | | | [[slides](xx.pdf)] |
 
