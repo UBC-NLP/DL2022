@@ -32,7 +32,7 @@
 ## 3. Course syllabus
 | Teaching Week | Topic | Leture | Lab | Slides |
 | ----  | ------ | ------- | ------- | ------- |
-| 1 | Course Overview & Refresher on Classical Deep Learning Architectures  | Overview of research directions in key core NLP areas; Refresher on classical neural architectures (e.g., CNNs, RNNs, LSTMs, and GRUs) with example applications | NumPy; PyTorch; Practice text classification with attention-based RNNs | [[slides](xx.pdf)] |
+| 1 | Course Overview & Refresher on Classical Deep Learning Architectures  | Overview of research directions in key core NLP areas; Refresher on classical neural architectures (e.g., CNNs, RNNs, LSTMs, and GRUs) with example applications | [NumPy](intro_to_numpy_pytorch/numpy_tutorial.ipynb); [PyTorch](intro_to_numpy_pytorch/pytorch_tutorial.ipynb); [Practice text classification with attention-based RNNs](text_classification_attention/rnn_attention_tutorial.ipynb) | [[slides](xx.pdf)] |
 | 2 | Transformer Variations  | Refresher on the Transformer; Long-document Transformers; Wide Transformers; Understanding the role of attention in the Transformer | Transformer architecture; Longformer | [[slides](xx.pdf)] |
 | 3 | Foundation Models: Encoder-Only Models  | Self-supervised learning; Encoder-only models (e.g., BERT, RoBERTA, SpanBERT, mBERT); Denoising objectives and contrastive objectives in encoder-only models; Anisotropy in the embeddings of the encoder; Evaluating encoder-only models | Encoder-only models; Inspecting the model embeddings for anisotropy | [[slides](xx.pdf)] |
 | 4 | Foundation Models: Decoder-Only Models  | | |[[slides](xx.pdf)] |
