@@ -70,7 +70,7 @@ class TextDataset(Dataset):
     def __init__(self, tokenizer: PreTrainedTokenizer, args, file_path: str, block_size=512):
         assert os.path.isfile(file_path)
 
-        block_size = block_size - (tokenizer.max_len - tokenizer.max_len_single_sentence)
+        block_size = block_size - (tokenizer.model_max_length - tokenizer.max_len_single_sentence)
 
         self.examples = []
         text_file = open(file_path, "r")
@@ -81,11 +81,13 @@ class TextDataset(Dataset):
         tokenized_text = [tokenizer.convert_tokens_to_ids(tokenizer.tokenize(text)) for text in all_text ]
 
         for doc in tokenized_text:
-            for i in range(0, len(doc) - block_size + 1, block_size):  # Truncate in block of block_size
+            for i in range(0, max(len(doc) - block_size, 0) + 1, block_size):  # Truncate in block of block_size
                 self.examples.append(tokenizer.build_inputs_with_special_tokens(doc[i : i + block_size]))
         # Note that we are loosing the last truncated example here for the sake of simplicity (no padding)
         # If your dataset is small, first you should look for a bigger one :-) and second you
         # can change this behavior by adding (model specific) padding.
+
+        print(len(self.examples))
 
     def __len__(self):
         return len(self.examples)
@@ -350,7 +352,8 @@ def train(args, train_dataset, model: PreTrainedModel, tokenizer: PreTrainedToke
     )
     set_seed(args)  # Added here for reproducibility
     for epoch in train_iterator:
-        # print("in training Loop")
+        epoch_loss = 0
+
         epoch_iterator = tqdm(train_dataloader, desc="Iteration", disable=args.local_rank not in [-1, 0])
 
         if args.local_rank != -1:
@@ -371,9 +374,7 @@ def train(args, train_dataset, model: PreTrainedModel, tokenizer: PreTrainedToke
             labels = labels.to(args.device)
 
             model.train()
-            outputs = model(inputs, masked_lm_labels=labels) if args.mlm else model(inputs, labels=labels)
-            
-            del inputs, labels
+            outputs = model(inputs, labels=labels) if args.mlm else model(inputs, labels=labels)
 
             loss = outputs[0]  # model outputs are always tuple in transformers (see doc)
 
@@ -389,6 +390,8 @@ def train(args, train_dataset, model: PreTrainedModel, tokenizer: PreTrainedToke
                 loss.backward()
 
             tr_loss += loss.cpu().item()
+            epoch_loss += loss.cpu().item()
+
             if (step + 1) % args.gradient_accumulation_steps == 0:
                 if args.fp16:
                     torch.nn.utils.clip_grad_norm_(amp.master_params(optimizer), args.max_grad_norm)
@@ -427,6 +430,8 @@ def train(args, train_dataset, model: PreTrainedModel, tokenizer: PreTrainedToke
         if args.max_steps > 0 and global_step > args.max_steps:
             train_iterator.close()
             break
+
+        print(f"Loss at Epoch {epoch}: {epoch_loss/(step+1)}")
 
     if args.local_rank in [-1, 0]:
         tb_writer.close()
@@ -471,7 +476,7 @@ def evaluate(args, model: PreTrainedModel, tokenizer: PreTrainedTokenizer, prefi
         labels = labels.to(args.device)
 
         with torch.no_grad():
-            outputs = model(inputs, masked_lm_labels=labels) if args.mlm else model(inputs, labels=labels)
+            outputs = model(inputs, labels=labels) if args.mlm else model(inputs, labels=labels)
             lm_loss = outputs[0]
             eval_loss += lm_loss.mean().item()
         nb_eval_steps += 1
@@ -661,7 +666,7 @@ def main():
     parser.add_argument("--local_rank", type=int, default=-1, help="For distributed training: local_rank")
     parser.add_argument("--server_ip", type=str, default="", help="For distant debugging.")
     parser.add_argument("--server_port", type=str, default="", help="For distant debugging.")
-    global args
+    # global args
     args = parser.parse_args()
 
     args.warmup_portion = float(args.warmup_portion)
@@ -735,7 +740,6 @@ def main():
 
     # Set seed
     set_seed(args)
-    logger.info("Rank %d. Word size %d", args.local_rank, torch.distributed.get_world_size())
     # Load pretrained model and tokenizer
     if args.local_rank not in [-1, 0]:
         torch.distributed.barrier()  # Barrier to make sure only the first process in distributed training download model & vocab
